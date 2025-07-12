@@ -1,0 +1,147 @@
+/* Container Styling */
+.orders-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+.orders-container h2 {
+  margin: 2rem 0; /* Adds 2rem space above and below */
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding:2rem 0 ;
+}
+
+
+/* Table Wrapper */
+.table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Table Structure */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Headers */
+.orders-table th {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Table Rows */
+.orders-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+  color: #374151;
+}
+
+/* Hover effect */
+.orders-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Status Badge Base */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+/* Status Colors */
+.status-created {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.status-in-progress {
+  background-color: #cffafe;
+  color: #06b6d4;
+}
+
+.status-completed {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status-cancelled {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #ca8a04;
+}
+
+/* Priority Tag Colors (optional) */
+.priority-low {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.priority-medium {
+  background-color: #fef9c3;
+  color: #92400e;
+}
+
+.priority-high {
+  background-color: #bae6fd;
+  color: #0369a1;
+}
+
+.priority-urgent {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+/* Action Buttons */
+.action-btn {
+  background: none;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+}
+
+.view-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #e5e7eb;
+  height: 6px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #3b82f6;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
