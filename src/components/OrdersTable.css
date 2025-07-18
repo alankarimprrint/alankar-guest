@@ -145,3 +145,118 @@
   transition: width 0.3s ease;
 }
 
+/* Image Gallery Modal Styles */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-image-container {
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  max-height: 80vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  overflow-x: auto;
+  max-width: 90vw;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.thumbnail.active {
+  border-color: #3b82f6;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-modal-btn:hover {
+  background: #555;
+}
+
+/* Action buttons */
+.action-btn {
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.view-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.images-btn {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+.action-btn {
+  padding: 6px;
+  border-radius: 4px;
+  display: inline-flex; /* Changed from flex to inline-flex */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin: 0 2px; /* Add horizontal margin */
+}
+

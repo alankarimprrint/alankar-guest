@@ -182,3 +182,169 @@
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
 }
+
+
+/* Image Modal Styles */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: default; /* Prevents the "clickable" cursor */
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.modal-image {
+  max-height: 90vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-modal-btn:hover {
+  background: #555;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Status badge colors */
+.badge-blue {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.badge-yellow {
+  background-color: #facc15;
+  color: black;
+}
+
+.badge-green {
+  background-color: #22c55e;
+  color: white;
+}
+
+.badge-red {
+  background-color: #ef4444;
+  color: white;
+}
+
+.badge-purple {
+  background-color: #a855f7;
+  color: white;
+}
+
+.badge-gray {
+  background-color: #6b7280;
+  color: white;
+}
+
+/* Base badge style */
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Priority badge colors */
+.badge-green {
+  background-color: #22c55e;  /* Fresh green for LOW */
+  color: white;
+}
+
+.badge-blue {
+  background-color: #3b82f6;  /* Calm blue for MEDIUM */
+  color: white;
+}
+
+.badge-orange {
+  background-color: #f97316;  /* Warning orange for HIGH */
+  color: white;
+}
+
+.badge-red {
+  background-color: #ef4444;  /* Alert red for URGENT */
+  color: white;
+}
+
+/* Base badge styles */
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+/* Base select styles */
+.status-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: all 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg..."); /* your dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+/* When COMPLETED is selected */
+.status-select.completed-status {
+  background-color: #22c55e;
+  color: white;
+  border-color: #16a34a;
+}
+
+/* Regular options */
+option {
+  background-color: white;
+  color: #333;
+}
+
+/* COMPLETED option in dropdown */
+option[value="COMPLETED"] {
+  background-color: #22c55e;
+  color: white;
+}
+
+/* Focus state */
+.status-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
