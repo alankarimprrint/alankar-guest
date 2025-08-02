@@ -110,7 +110,7 @@ const OrdersTable = ({ onOrderSelect }) => {
                                   className="progress-bar"
                                   style={{ width: `${percent}%` }}
                                 >
-                                  <span className="progress-label">{`${percent}%`}</span>
+                                  <span className="progress-label">{`${percent}`}</span>
                                 </div>
                               </div>
                             );
@@ -121,7 +121,7 @@ const OrdersTable = ({ onOrderSelect }) => {
                               className="progress-bar"
                               style={{ width: `0%` }}
                             >
-                              <span className="progress-label">0%</span>
+                              <span className="progress-label">.</span>
                             </div>
                           </div>
                         )}

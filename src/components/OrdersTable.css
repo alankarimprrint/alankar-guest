@@ -260,3 +260,7 @@ body.modal-open {
   margin: 0 2px; /* Add horizontal margin */
 }
 
+.progress-label{
+  font-size: 0;
+  color: white;
+}
