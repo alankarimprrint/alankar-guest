@@ -83,7 +83,7 @@ const OrderDetails = ({ orderId, onBack }) => {
             <label>Type:</label>
             <span>{order.orderType}</span>
           </div>
-          
+
           <div>
             <label>Priority:</label>
             <span
@@ -95,11 +95,13 @@ const OrderDetails = ({ orderId, onBack }) => {
             </span>
           </div>
           <div>
-  <label>Status:</label>
-  <span className={`badge badge-${STATUS_COLORS[order.status] || "gray"}`}>
-    {order.status}
-  </span>
-</div>
+            <label>Status:</label>
+            <span
+              className={`badge badge-${STATUS_COLORS[order.status] || "gray"}`}
+            >
+              {order.status}
+            </span>
+          </div>
           <div>
             <label>Created at:</label>
             <span>
@@ -108,7 +110,7 @@ const OrderDetails = ({ orderId, onBack }) => {
                 : "N/A"}
             </span>
           </div>
-          
+
           <div>
             <label>Start Date:</label>
             <span>
@@ -126,11 +128,38 @@ const OrderDetails = ({ orderId, onBack }) => {
             </span>
           </div>
         </div>
+        <hr style={{margin:"10px"}}></hr>
+        {/* ////////// */}
+         <div className="grid-header">
+           <div>
+            <label>Description:</label>
+            <span>{order.description}</span>
+          </div>
+          <div>
+            <label>height:</label>
+            <span><b>{order.height}</b></span>
+          </div>
 
-        <div className="description">
-          <label>Description:</label>
-          <p>{order.description}</p>
+          <div>
+            <label>width:</label>
+            <span 
+             
+            >
+              <b>{order.width}</b>
+            </span>
+          </div>
+          <div>
+            <label>QTY:</label>
+            <span
+              >
+             <b> {order.qty}</b>
+            </span>
+          </div>
+         
+
+          
         </div>
+     
       </div>
 
       <div className="section">
