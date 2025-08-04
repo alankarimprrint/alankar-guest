@@ -136,12 +136,12 @@ const OrderDetails = ({ orderId, onBack }) => {
             <span>{order.description}</span>
           </div>
           <div>
-            <label>height:</label>
+            <label>Height:</label>
             <span><b>{order.height}</b></span>
           </div>
 
           <div>
-            <label>width:</label>
+            <label>Width:</label>
             <span 
              
             >
@@ -213,7 +213,7 @@ const OrderDetails = ({ orderId, onBack }) => {
               <div>
                 <div className="step-title">{step.orderStepName}</div>
                 <div className="step-measurement">
-                  Measurement : {step.measurement || "N/A"}
+                  Measurement : <b>{step.measurement || "N/A"}</b>
                 </div>
               </div>
             </div>
