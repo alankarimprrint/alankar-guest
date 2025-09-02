@@ -14,7 +14,7 @@ const OrdersDashboard = ({ onOrderSelect }) => {
   };
   return (
     <div className="dashboard-layout">
-      <Sidebar />
+     
       <main className="dashboard-main">
         <div className="top-bar text-left text-sm text-gray-600 mb-6">
           {getGreeting()}! <span className="font-bold">TEAM</span>
